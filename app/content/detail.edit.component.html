@@ -1,0 +1,20 @@
+<form class="form-horizontal" *ngIf="item">
+  <div class="form-group">
+    <label for="firstName" class="col-sm-2 control-label">First Name</label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" id="firstName" placeholder="First Name" [(ngModel)]="item.firstName" name="firstName">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="lastName" class="col-sm-2 control-label">Last Name</label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" id="lastName" placeholder="Last Name" [(ngModel)]="item.lastName" name="lastName">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-3">
+      <button type="submit" class="btn btn-default" (click)="submit()">Submit</button>
+      <button type="button" class="btn btn-default" (click)="back()">Back</button>
+    </div>
+  </div>
+</form>

@@ -1,0 +1,11 @@
+.sidebar-list {
+   list-style: none;
+   position: initial;
+   padding: 50px 15px;
+   background-color: #222;
+   color: #fff;
+}
+
+.sidebar-item {
+    margin: 5px 0;
+}
